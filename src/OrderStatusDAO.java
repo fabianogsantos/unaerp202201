@@ -30,7 +30,7 @@ public class OrderStatusDAO {
 	}
 	
 	public void select() {
-		String sql = "select * from order_status";
+		String sql = "select * from orders_status";
 		
 		List<OrderStatus> lista = new ArrayList<OrderStatus>();
 		
@@ -46,10 +46,7 @@ public class OrderStatusDAO {
 				os.setId(id);
 				os.setStatus_name(status_name);
 				
-				System.out.println(os);
-				
 				lista.add(os);
-				System.out.println(lista);
 			}
 			
 			rs.close();
